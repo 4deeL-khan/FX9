@@ -430,7 +430,7 @@ _______________________________________
 _______________ಠ_ಠ____________________  
 [√] FB ID       :  SULMAN KABIR☠
 [√] GANG         :  F9_HUNTER :)
-[√] MESG   :  KALEEM TERII MA KO LAND🙈
+[√] MESG   :  KALEEM TERII MA KO L?🙈
 [√] STATUS     : ITZ A BRAND JANU🥰
 [√] TYP      : FYTR+HACKER+RPTR☬
 
