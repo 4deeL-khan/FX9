@@ -62,7 +62,7 @@ def ND():
 
     if opt == '1':
 
-        os.system('xdg-open https://www.facebook.com/ved.baghel.39'')
+        os.system('xdg-open https://www.facebook.com/ved.baghel.39')
 
         o()
 
