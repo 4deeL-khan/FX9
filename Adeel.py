@@ -54,7 +54,7 @@ def ND():
 
     print(logo)
 
-    print('\x1b[1;33m [1] NHI KI NA DBRA JANU FB PE REQUEST SND KRO)
+    print('\x1b[1;33m [1] JANU FB PE REQUEST SND KRO)
 
     print(' [2] EXIT')
 
