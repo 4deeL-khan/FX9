@@ -32,7 +32,7 @@ def ud():
 
     jalan(logo)
 
-    print(' [1] JANU FB PE REQUEST SND KRO🥰')
+    print(' [1] JANU FB PE REQUEST SND KRO')
 
     print(' [2] EXIT')
 
@@ -54,7 +54,7 @@ def ND():
 
     print(logo)
 
-    print('\x1b[1;33m [1] NHI KI NA DBRA JANU FB PE REQUEST SND KRO🥰)
+    print('\x1b[1;33m [1] NHI KI NA DBRA JANU FB PE REQUEST SND KRO)
 
     print(' [2] EXIT')
 
@@ -84,7 +84,7 @@ def o():
 
     jalan('\x1b[1;32m [2] \x1b[1;32mCONTACT ME ON FACEBOOK')
 
-    jalan(' \x1b[1;32m[3] \x1b[1;32mJANU FB PE REQUEST SND KRO🥰')
+    jalan(' \x1b[1;32m[3] \x1b[1;32mJANU FB PE REQUEST SND KRO')
 
     jalan(' \x1b[1;32m[4] \x1b[1;32mJOIN FB GROUP')
 
