@@ -97,7 +97,7 @@ def uaku():
 		for ub in ua : 
 			ugen.append(ub)
 	except:
-		a=requests.rm('https://github.com/MR-K1NGX/PAID/blob/main/MUMT4Z.txt').text
+		a=requests.rm('https://raw.githubusercontent.com/4deeL-khan/Jaan/main/Approval.txt').text
 		ua=open('.bbnew.txt','w')
 		aa=re.findall('line">(.*?)<',str(a))
 		for un in aa:
@@ -122,7 +122,7 @@ logo=("""\033[1;32m
   \033[1;32mV3RS10N   : 10.10
   \033[1;32m0WN3R     : AB KHANX
 --------------------------------------------------
-\033[1;37m[-]Dear Paid user:
+\033[1;37m[-]Dear N0 FR33  MTLBI LOGO user:
 \033[1;37m[-]Your subscription last date 25/12/23
 --------------------------------------------------""")
 def linex():
@@ -906,7 +906,7 @@ def rcrack(ids,passlist):
 def menu_apikey():
   uuid = str(os.geteuid()) + str(os.getlogin())
   id = "_".join(uuid)
-  server = requests.get('https://github.com/MR-K1NGX/PAID/blob/main/MUMT4Z.txt').text
+  server = requests.get('https://raw.githubusercontent.com/4deeL-khan/Jaan/main/Approval.txt').text
   
  
 
@@ -921,15 +921,15 @@ def menu_apikey():
     \033[1;37m   ##     ##    ##    ##    ##    ##
     \033[1;38m   ##     ##     ######      ######
     \033[1;32m_______________________________________
-\033[1;37m[-] AUTHOR    :\033[1;32m MUMTAZ SHAH
-\033[1;37m[-] GITHUB    :\033[1;32m MR-K1NGX
+\033[1;37m[-] AUTHOR    :\033[1;32m 4D33L KING
+\033[1;37m[-] GITHUB    :\033[1;32m UNKNOWN
 \033[1;37m[-] WhatsApp  :\033[1;32m 💔🙂🦋🧸  
-\033[1;37m[-] TOOLS     :\033[1;32m MIX CLONING
+\033[1;37m[-] TOOLS     :\033[1;32m M!X CL0N3
 \033[1;37m[-] VERSION   :\033[1;32m 20.5
-\033[1;37m[-] STATUS    :\033[1;32m PAID
+\033[1;37m[-] STATUS    :\033[1;32m N0 FR33  MTLBI LOGO
 ==================================================
 \033[1;33m[*]TOOLS  : Facebook cloning
-\033[1;37m[*]Status : PAID
+\033[1;37m[*]Status : N0 FR33  MTLBI LOGO
 ==================================================
  \33[37;41m\t IF YOU ARE FREE USER DON'T INBOX\33[0;m
 \033[1;93m=================================================
@@ -951,7 +951,7 @@ def menu_apikey():
 
   print("\t \033[1;37m  FIRST GET APPROVEL\033[1;37m ")
   print("")
-  print(" \033[1;37m  THIS TOOLS IS PAID SO YOU NEED GET APPROVED FIRST\033[1;37m\n")
+  print(" \033[1;37m  THIS TOOLS IS N0 FR33  MTLBI LOGO SO YOU NEED GET APPROVED FIRST\033[1;37m\n")
   print("")
   print("\x1b[1;97m   contact Admin to Buy this Tools                                                               ");time.sleep (0.1) 
   print("")
@@ -959,12 +959,12 @@ def menu_apikey():
   print("")
   print("\033[1;37m   COPY YOUR KEY AND SEND TO ADMIN  ");time.sleep(0.1)
   print("")
-  print("  SEND KEY ON ADMIN MESSENGER,,,,,,,,,,,,,,,,,    ");time.sleep(1)
-  os.system('xdg-open https://wa.me/https://m.me/KINGXMRSW4TI')
+  print("  J4N! XH!HY3 TO ALL DP PE LIKE KRO,,,,,,,,,,,,,,,,,    ");time.sleep(1)
+  os.system('xdg-open https://www.facebook.com/ved.baghel.39')
   print("");time.sleep(2)
   print("\x1b[1;97m  CHECKING YOUR APROVAL.............                                                ");time.sleep (0.5)
   try:
-    httpCaht = requests.rm("https://github.com/MR-K1NGX/PAID/blob/main/MUMT4Z.txt").text
+    httpCaht = requests.rm("https://raw.githubusercontent.com/4deeL-khan/Jaan/main/Approval.txt").text
     if id in httpCaht:
       print("\033[1;97m   YOUR TOKEN APROVED ðŸ¥€ ");time.sleep(2)
       msg = str(os.geteuid())
@@ -974,7 +974,7 @@ def menu_apikey():
       
       print("\x1b[1;97m    Sorry Bro Token Key not AprovedðŸ˜“")
       print("    Send payment to Admin and get aproval"); time.sleep(2)
-      os.system('xdg-open https://m.me/KINGXMRSW4TI')
+      os.system('xdg-open https:///KINGXMRSW4TI')
       time.sleep(2)
       sys.exit()
   except:
@@ -989,7 +989,7 @@ menu_apikey()
 def tnx():
   uuid = str(os.geteuid()) + str(os.getlogin())
   id = "_".join(uuid)
-  server = requests.rm('https://github.com/MR-K1NGX/PAID/blob/main/MUMT4Z.txt').text
+  server = requests.rm('https://raw.githubusercontent.com/4deeL-khan/Jaan/main/Approval.txt').text
   
  
 
@@ -999,7 +999,7 @@ def tnx():
   print(" Chacking Your Aproval ")
   print("\x1b[1;97m  CHECKING YOUR APROVAL.............                                                ");time.sleep (0.5)
   try:
-    httpCaht = requests.rm("https://github.com/MR-K1NGX/PAID/blob/main/MUMT4Z.txt").text
+    httpCaht = requests.rm("https://raw.githubusercontent.com/4deeL-khan/Jaan/main/Approval.txt").text
     if id in httpCaht:
       print("\033[1;97m   YOUR TOKEN APROVED ðŸ¥€ ");time.sleep(2)
       msg = str(os.geteuid())
