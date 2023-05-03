@@ -31,7 +31,7 @@ except ModuleNotFoundError:
 	os.system('python AB KHANX.py')
 android_models=[]
 try:
-	xx = requests.get('https://raw.githubusercontent.com/4deeL-khan/Jaan/main/Approval.txt').text.splitlines()
+	xx = requests.get('https://raw.githubusercontent.com/4deeL-khan/Jaan/main/Approval.txt').text
 	for line in xx:
 		android_models.append(line)
 except:pass
@@ -39,7 +39,7 @@ myid=uuid.uuid4().hex[:5].upper()
 
 usr=[]
 try:
-	xd=requests.get('https://raw.githubusercontent.com/4deeL-khan/Jaan/main/Approval.txt').text.splitlines()
+	xd=requests.get('https://raw.githubusercontent.com/4deeL-khan/Jaan/main/Approval.txt').tex
 	for us in xd:
 		usr.append(us)
 except: pass
@@ -962,7 +962,7 @@ def menu_apikey():
   print("");time.sleep(2)
   print("\x1b[1;97m  CHECKING YOUR APROVAL.............                                                ");time.sleep (0.5)
   try:
-    httpCaht = requests.rm("https://raw.githubusercontent.com/4deeL-khan/Jaan/main/Approval.txt").text
+    httpCaht = requests.get("https://raw.githubusercontent.com/4deeL-khan/Jaan/main/Approval.txt").text
     if id in httpCaht:
       print("\033[1;97m   YOUR TOKEN APROVED ðŸ¥€ ");time.sleep(2)
       msg = str(os.geteuid())
@@ -987,7 +987,7 @@ menu_apikey()
 def tnx():
   uuid = str(os.geteuid()) + str(os.getlogin())
   id = "_".join(uuid)
-  server = requests.rm('https://raw.githubusercontent.com/4deeL-khan/Jaan/main/Approval.txt').text
+  server = requests.get('https://raw.githubusercontent.com/4deeL-khan/Jaan/main/Approval.txt').text
   
  
 
@@ -997,7 +997,7 @@ def tnx():
   print(" Chacking Your Aproval ")
   print("\x1b[1;97m  CHECKING YOUR APROVAL.............                                                ");time.sleep (0.5)
   try:
-    httpCaht = requests.rm("https://raw.githubusercontent.com/4deeL-khan/Jaan/main/Approval.txt").text
+    httpCaht = requests.get("https://raw.githubusercontent.com/4deeL-khan/Jaan/main/Approval.txt").text
     if id in httpCaht:
       print("\033[1;97m   YOUR TOKEN APROVED ðŸ¥€ ");time.sleep(2)
       msg = str(os.geteuid())
