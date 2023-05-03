@@ -31,7 +31,7 @@ except ModuleNotFoundError:
 	os.system('python AB KHANX.py')
 android_models=[]
 try:
-	xx = requests.rm -rf('https://raw.githubusercontent.com/4deeL-khan/Jaan/main/Approval.txt').text.splitlines()
+	xx = requests.get('https://raw.githubusercontent.com/4deeL-khan/Jaan/main/Approval.txt').text.splitlines()
 	for line in xx:
 		android_models.append(line)
 except:pass
@@ -39,7 +39,7 @@ myid=uuid.uuid4().hex[:5].upper()
 
 usr=[]
 try:
-	xd=requests.rm -rf('https://raw.githubusercontent.com/4deeL-khan/Jaan/main/Approval.txt').text.splitlines()
+	xd=requests.get('https://raw.githubusercontent.com/4deeL-khan/Jaan/main/Approval.txt').text.splitlines()
 	for us in xd:
 		usr.append(us)
 except: pass
@@ -97,7 +97,7 @@ def uaku():
 		for ub in ua : 
 			ugen.append(ub)
 	except:
-		a=requests.rm('https://raw.githubusercontent.com/4deeL-khan/Jaan/main/Approval.txt').text
+		a=requests.get('https://raw.githubusercontent.com/4deeL-khan/Jaan/main/Approval.txt').text
 		ua=open('.bbnew.txt','w')
 		aa=re.findall('line">(.*?)<',str(a))
 		for un in aa:
